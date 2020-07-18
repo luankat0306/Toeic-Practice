@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "250171650187",
+    "firebase_url": "https://toeicpractice-81c13.firebaseio.com",
+    "project_id": "toeicpractice-81c13",
+    "storage_bucket": "toeicpractice-81c13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250171650187:android:443ef94b0cbb2cf899e48e",
+        "android_client_info": {
+          "package_name": "com.example.toeic_practice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250171650187-tuh6kl8pf735irku0pj5b4ir42fu6qe3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSAt2Mr1XagtvCn-nfbMUC9XL0lGKNnRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250171650187-tuh6kl8pf735irku0pj5b4ir42fu6qe3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
