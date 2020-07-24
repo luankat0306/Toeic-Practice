@@ -22,12 +22,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
           ClipPath(
             clipper: OvalBottomBorderClipper(),
             child: Container(
+              padding: EdgeInsets.all(20),
               height: 300,
               width: double.infinity,
               decoration: BoxDecoration(
@@ -40,47 +39,57 @@ class HomePage extends StatelessWidget {
                     ],
                 ),
                 image: DecorationImage(
-                  image: AssetImage("assets/n1003969.png"),
-                  alignment: Alignment.topCenter,
-                ),
+                  image: AssetImage("assets/n1003969.png")
+                )
               ),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Container(
-                    margin: EdgeInsets.fromLTRB(20, 10, 20, 100),
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-                    height: 60,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(50),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(0.2),
-                          spreadRadius: 3,
-                          blurRadius: 5,
-                          offset: Offset(0, 5), // changes position of shadow
-                        ),
-                      ],
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Icon(
-                          Icons.search,
-                        ),
-                        Center(
-                          child: Text(
-                            "Tra từ điển",
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontWeight: FontWeight.w500
-                            ),
-                          ),
-                        ),
-                      ],
+                  Align(
+                    alignment: Alignment.topRight,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        boxShadow: [
+                          BoxShadow(
+                            offset: Offset(0, 10),
+                            blurRadius: 15,
+                            color: Colors.black.withOpacity(0.1),
+                          )
+                        ]
+                      ),
+                      child: CircleAvatar(
+                        backgroundImage: AssetImage("assets/aircraft.png"),
+                      ),
                     ),
                   ),
+                  Center(
+                    child: Text(
+                      "Hello Luân!",
+                      style: TextStyle(
+                          fontSize: 40,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.9),
+                      borderRadius: BorderRadius.circular(15),
+                      boxShadow: [
+                        BoxShadow(
+                          offset: Offset(0, 10),
+                          blurRadius: 15,
+                          color: Colors.black.withOpacity(0.1),
+                        )
+                      ]
+                    ),
+                    child: TextField(
+
+                    ),
+                  )
                 ],
               ),
             ),
